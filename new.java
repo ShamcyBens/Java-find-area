@@ -1,10 +1,3 @@
-# Java-prompt-user-and-get-area
-
-// This is a project repository that holds all my startapp files and codees for my project. 
-
-//This project is bassed on a new Programming Language I'm doing  -- Java 
-
-
 import java.util.Scanner;
 
 public class BankProgram {

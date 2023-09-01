@@ -1,10 +1,3 @@
-# Java-prompt-user-and-get-area
-
-// This is a project repository that holds all my startapp files and codees for my project. 
-
-//This project is bassed on a new Programming Language I'm doing  -- Java 
-
-
 import java.util.Scanner;
 
 public class BankProgram {
@@ -12,6 +5,7 @@ public class BankProgram {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Welcome to the Java Bank Test Program");
+        System.out.println("************************************");
 
         // Check if the user has an account
         boolean hasAccount = checkForAccount(scanner);
@@ -24,6 +18,7 @@ public class BankProgram {
         }
 
         System.out.println("What's next, Do you want to:");
+        System.out.println("************************************");
         System.out.println("To withdraw some cash, enter 1: ");
         System.out.println("To deposit some cash, enter 2: ");
 
@@ -45,46 +40,47 @@ public class BankProgram {
             double amount = getDepositAmount(scanner);
             accountBalance += amount;
             System.out.println("You have deposited " + amount);
+            System.out.println("Your Balance is " + accountBalance + "from " + accountBalance);
             // Update the account balance in a real application
         }
 
         scanner.close();
     }
 
-    // Function to check if the user has an account
-    private static boolean checkForAccount(Scanner scanner) {
-        System.out.println("Do you have an Account (y/N)?");
-        String ans = scanner.next();
-        return ans.equalsIgnoreCase("y");
-    }
+        // Function to check if the user has an account
+        private static boolean checkForAccount(Scanner scanner) {
+            System.out.println("Do you have an Account (y/N)?");
+            String ans = scanner.next();
+            return ans.equalsIgnoreCase("y");
+        }
 
-    // Function to get the user's name
-    private static String getUserName(Scanner scanner) {
-        System.out.println("Please enter your name: ");
-        return scanner.next();
-    }
+        // Function to get the user's name
+        private static String getUserName(Scanner scanner) {
+            System.out.println("Please enter your name: ");
+            return scanner.next();
+        }
 
-    // Function to get the account number
-    private static int getAccountNumber(Scanner scanner) {
-        System.out.println("Please enter your account number: ");
-        return scanner.nextInt();
-    }
+        // Function to get the account number
+        private static int getAccountNumber(Scanner scanner) {
+            System.out.println("Please enter your account number: ");
+            return scanner.nextInt();
+        }
 
-    // Function to get the account balance
-    private static double getAccountBalance(Scanner scanner) {
-        System.out.println("Please enter your account balance: ");
-        return scanner.nextDouble();
-    }
+        // Function to get the account balance
+        private static double getAccountBalance(Scanner scanner) {
+            System.out.println("Please enter your account balance: ");
+            return scanner.nextDouble();
+        }
 
-    // Function to get the withdrawal amount
-    private static double getWithdrawAmount(Scanner scanner) {
-        System.out.println("Please enter the amount you wish to withdraw: ");
-        return scanner.nextDouble();
-    }
+        // Function to get the withdrawal amount
+        private static double getWithdrawAmount(Scanner scanner) {
+            System.out.println("Please enter the amount you wish to withdraw: ");
+            return scanner.nextDouble();
+        }
 
-    // Function to get the deposit amount
-    private static double getDepositAmount(Scanner scanner) {
-        System.out.println("Please enter the amount you wish to deposit: ");
-        return scanner.nextDouble();
-    }
+        // Function to get the deposit amount
+        private static double getDepositAmount(Scanner scanner) {
+            System.out.println("Please enter the amount you wish to deposit: ");
+            return scanner.nextDouble();
+        }
 }
